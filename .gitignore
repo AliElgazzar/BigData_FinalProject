@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+metastore_db/
+derby.log
+spark-warehouse/
+checkpoint*/
+.idea/
+.vscode/
+.DS_Store
+*.log
+compose-up.log

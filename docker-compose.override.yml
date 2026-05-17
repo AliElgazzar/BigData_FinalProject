@@ -1,0 +1,10 @@
+services:
+  hive-server:
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        export HADOOP_CLIENT_OPTS="-Xmx1G -Dhive.metastore.uris=thrift://hive-metastore:9083 -Dhive.metastore.warehouse.dir=hdfs://namenode:9000/user/hive/warehouse -Dfs.defaultFS=hdfs://namenode:9000 -Dhive.server2.enable.doAs=false -Dhive.execution.engine=mr"
+        exec /opt/hive/bin/hive --skiphadoopversion --skiphbasecp --service hiveserver2
+    environment:
+      SERVICE_NAME: hiveserver2
+      SKIP_SCHEMA_INIT: "true"

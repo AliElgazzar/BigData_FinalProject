@@ -1,0 +1,8 @@
+server_name,language,project_type,region
+en.wikipedia.org,English,Encyclopedia,Global
+ar.wikipedia.org,Arabic,Encyclopedia,Middle East
+fr.wikipedia.org,French,Encyclopedia,Europe
+de.wikipedia.org,German,Encyclopedia,Europe
+es.wikipedia.org,Spanish,Encyclopedia,Europe/Latin America
+commons.wikimedia.org,Multilingual,Media Repository,Global
+www.wikidata.org,Multilingual,Knowledge Graph,Global
